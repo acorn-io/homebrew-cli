@@ -1,2 +1,2 @@
-# acorn-tap
-Homebrew tap for Acorn CLI
+# Hombrew
+Homebrew tap for Acorn
