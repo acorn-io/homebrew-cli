@@ -5,12 +5,12 @@
 class Acorn < Formula
   desc "Acorn CLI"
   homepage "https://acorn.io"
-  version "0.10.0-rc5"
+  version "0.10.0"
   license "Apache 2.0"
 
   on_macos do
-    url "https://github.com/acorn-io/runtime/releases/download/v0.10.0-rc5/acorn-v0.10.0-rc5-macOS-universal.tar.gz"
-    sha256 "851b11f86d6fde6d2aba4c2ea81fba163cdcd21f4b538810082483f8da8a5931"
+    url "https://github.com/acorn-io/runtime/releases/download/v0.10.0/acorn-v0.10.0-macOS-universal.tar.gz"
+    sha256 "ddd99782becab51e0342fe22d4c03e8caf34dff7c7750bba12a88d2f1a231dc4"
 
     def install
       bin.install "acorn"
@@ -19,16 +19,16 @@ class Acorn < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acorn-io/runtime/releases/download/v0.10.0-rc5/acorn-v0.10.0-rc5-linux-arm64.tar.gz"
-      sha256 "4423c0accc27a17b7a10f8804727fc5126d7e60dfc96fbce6ed7f4e76f8844ca"
+      url "https://github.com/acorn-io/runtime/releases/download/v0.10.0/acorn-v0.10.0-linux-arm64.tar.gz"
+      sha256 "ae54a1d90f5c3ea9ce0bfa4304eceb921d6dcaccec2f48f3474e0fdc6bf445db"
 
       def install
         bin.install "acorn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/acorn-io/runtime/releases/download/v0.10.0-rc5/acorn-v0.10.0-rc5-linux-amd64.tar.gz"
-      sha256 "522f2feaec36edf8462e08b7eca6a5e473102403e3cc1a49d56650afc47ee45a"
+      url "https://github.com/acorn-io/runtime/releases/download/v0.10.0/acorn-v0.10.0-linux-amd64.tar.gz"
+      sha256 "2cba8c6502b33f65ba58ffe0dc67f601853d7f36b100846088271ec545886e4b"
 
       def install
         bin.install "acorn"
